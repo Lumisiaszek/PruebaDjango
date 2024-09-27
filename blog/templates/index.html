@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+{% load static %}    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SIT Chaco - Sistema de Información Territorial</title>
+        <link rel="icon" type="image/svg+xml" href="./assets/img/logo_icono.png">
+        <meta content="Sistema de información territorial de la provincia del Chaco, herramienta de visualización, consulta y descarga de datos georreferenciados" name="description">
+        <meta content="geoportal, datos, georreferencia, visualizador, Chaco, SIT, Sistemas de informacion territorial, gis, sig" name="keywords">
+
+        <!-- Estilos -->
+        <link rel="stylesheet" href="{% static 'styles/style.css' %}">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    </head>
+
+
+    <body>
+
+        <!-- ImagenFondo -->
+        <div class="contenedor_ppal"> 
+            <div class="contenedor_ppal-img">
+                <img src="{% static 'img/fondo_inicio.png' %}" alt="">
+            </div>
+         <!-- Encabezado -->
+            <header>
+                <div class="encabezado_logo">
+                    <img src="{% static 'img/enfoqueamb_logo.png' %}" alt="">
+                </div>
+                <div class="encabezado_enlaces">
+                    <li><a href="#">¿Quiénes somos?</a></li>
+                    <li><a href="#">Contactanos</a></li>
+                    <li><a href="#">Comunidad</a></li>
+                    <li><a href="" class="enlace_boton">Iniciar Sesión</a></li>
+                </div>
+            </header>
+        <!-- Textos principales inicio -->    
+            <div class="contenedor_ppal-logo">
+                <h1>Bienvenidos a Enfoque Ambiental!<br>
+                    Tu blog de noticias con todo lo que tenes que saber de la actualidad de nuestro planeta
+                </h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed tenetur sit aspernatur necessitatibus repellat,
+                quaerat, fuga possimus totam debitis molestias consequuntur. Quaerat eius possimus autem! Est dolor itaque modi incidunt.</p>
+            </div>
+            <div class="contenedor_ppal-deslizar">
+                <h2>Deslizá para conocer más</h2>
+                <img src="{% static 'img/arrow_bajo.png' %}" alt="">
+            </div>
+        </div>
+
+        <!-- Titulo + redes  -->
+        <div class="contenedorblog">
+            <div class="contenedorblog_inicio">
+                <h1>Blog de noticias</h1> 
+                <div class="contenedor_redes">
+                    <a href="" target="_blank" class="icon"><img class="redes__iconos-svg" src="{% static 'img/iconos/instagram.png' %}" alt="instagram" title="instagram"/></a>
+                    <a href="" target="_blank" class="icon"><img class="redes__iconos-svg" src="{% static 'img/iconos/facebook.png' %}" alt="facebook" title="facebook"/></a>
+                    <a href="" class="icon" target="_blank"><img class="redes__iconos-svg" src="{% static 'img/iconos/twitter.png' %}" alt="x-twitter" title="x-twitter"/></a>
+                    <a href="" class="icon" target="_blank"><img class="redes__iconos-svg" src="{% static 'img/iconos/youtube.png' %}" alt="youtube" title="youtube"/></a>
+                </div>     
+            </div>
+
+        <!-- Categorias -->    
+            <div class="contenedorblog_categorias">
+                <li><a href="#">Todos</a></li>
+                <li><a href="#">Clima</a></li>
+                <li><a href="#">Naturaleza</a></li>
+                <li><a href="#">Energía</a></li>
+                <li><a href="#">Politica ambiental</a></li>
+                <li><a href="#">Sustentabilidad</a></li>
+            </div>
+        </div>
+
+        <!-- Posteos usuarios -->
+        <div class="contenedorposteos">
+            <div class="contenedorposteos_tarjeta">
+                <div class="tarjeta_img">
+                    <img src="{{post.imagen}}" alt="">
+                    <p class="categoria">{{ post.categoria }}</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        
+   </body>
